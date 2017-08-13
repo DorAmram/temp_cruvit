@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout-v11/notification_media_cancel_action.xml"
+    }
+]

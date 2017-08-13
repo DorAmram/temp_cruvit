@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_donation"
+        android:title="New donation" />
+    <item android:id="@+id/reset_db"
+        android:title="Reset db" />
+    <item android:id="@+id/help"
+        android:title="Help" />
+    <item android:id="@+id/map"
+        android:title="Map" />
+</menu>

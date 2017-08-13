@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hdpi"
+    tools:context="com.doramram.cruvit.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="logo"
+        android:src="@drawable/cruvit_logo"
+        android:id="@+id/main_logo"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true" />
+
+    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/gridview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:columnWidth="90dp"-->
+        <!--android:numColumns="2"-->
+        <!--android:columnCount="4"-->
+        <!--android:rowCount="4"-->
+        <!--android:verticalSpacing="10dp"-->
+        <!--android:horizontalSpacing="10dp"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_below="@+id/main_logo" />-->
+
+    <Button
+        android:id="@+id/button_progress"
+        android:text="מצב עדכני"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/bottonshape"
+
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button_choose_job" />
+
+
+    <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Insert to firebase"-->
+        <!--android:layout_above="@+id/button_choose_product"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="37dp" />-->
+
+    <Button
+        android:id="@+id/button_choose_product"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="לתרום"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/bottonshape"
+
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_choose_job" />
+
+    <Button
+        android:id="@+id/button_choose_job"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="להתנדב"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/bottonshape"
+
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/button_choose_product"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

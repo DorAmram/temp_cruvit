@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/dor/Desktop/Cruvit/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/home/dor/Desktop/Cruvit/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/round_corner_progress_icon.png",
+        "source": "/home/dor/.android/build-cache/06b95f2c80d338a5ba06309b26421c51fb22e3e7/output/res/mipmap-xxhdpi/round_corner_progress_icon.png"
+    }
+]

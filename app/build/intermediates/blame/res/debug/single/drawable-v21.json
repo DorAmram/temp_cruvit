@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    }
+]

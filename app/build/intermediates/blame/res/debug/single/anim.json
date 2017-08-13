@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/slide_out_bottom.xml",
+        "source": "/home/dor/Desktop/Cruvit/app/src/main/res/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/slide_in_bottom.xml",
+        "source": "/home/dor/Desktop/Cruvit/app/src/main/res/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/anim/design_snackbar_in.xml"
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/dor/.android/build-cache/4d81d749842215a2eb9270ccc7883e831321b793/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/home/dor/.android/build-cache/4d81d749842215a2eb9270ccc7883e831321b793/output/res/color/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/dor/.android/build-cache/4d81d749842215a2eb9270ccc7883e831321b793/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/res/color/design_error.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
+        "source": "/home/dor/.android/build-cache/4d81d749842215a2eb9270ccc7883e831321b793/output/res/color/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/color/abc_hint_foreground_material_light.xml"
+    }
+]

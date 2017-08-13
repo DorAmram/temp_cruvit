@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "799473095341",
+    "firebase_url": "https://cruvit-dc242.firebaseio.com",
+    "project_id": "cruvit-dc242",
+    "storage_bucket": "cruvit-dc242.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799473095341:android:d0826230b107e312",
+        "android_client_info": {
+          "package_name": "com.doramram.cruvit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799473095341-ne217naggir8doe50a62mcfatmvna3j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxOOeY3gpbiEi0URm1LYQoLEKzXBCGd44"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
