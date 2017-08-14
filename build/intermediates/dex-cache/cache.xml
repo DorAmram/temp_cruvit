@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/dcfd4be2097372a0543b9742d6e1d03e6faaafd2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74aada49ce767b80718ba5cdfbff7caeb7876956">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_19be75a440fb780c7205785208098eb70b7ccc5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/06b95f2c80d338a5ba06309b26421c51fb22e3e7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="88c6386ad8356b89487b43bcaae4827b1abe999c">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dd5cf07e09382738f35179c99adb8a877ca312ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/Desktop/Cruvit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9c846d3375a32be119a423caf0f4489e1e069b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_afc22f88b6c4bcaa7d8a7d26ae1a764fbe2d6d0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.12/6ec0bbd3e161a73ed672284b587fd32309a86d7a/tubesock-0.0.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/tubesock-0.0.12_6418f8610d3a26814fb0d0d90b4bc2b4019a2043/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/5ef6fac9069e3f8da39d2accdd4a8d2f1410ab3f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_60d23731cc1945115bd62ef673f18a893762cd0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/a10450489b6b78a533a58ce7759ca855673ec666/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ae5941000ab3edd8b26318a1f846cdfac9bb67be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/ab60bda90e4726a17d4cc2a98fe585403dc67d34/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f5a0e3f1fadfb17a609b4d36ae2c84f346b90f81/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_9ec2bf0766513ebaa535dfd36b9ffe30d8d1f5dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/87b8a26e561d169dec04d2f76a9a53aa8e8a28a5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a67f0befe5618c741fd5d8cb516eca34a1fe052e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/13903e0c6a2e04f5383d4bdbe2bf53a74b3f04a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d21c517b3d8326974848ad52d2cc45182a0b67c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/Desktop/Cruvit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b06225b6eaa3b73f5057b29b23e229e786a32ac3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/6808c5e2ddcfd889aa9de05a3a6ca16d83f03298/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2fc1b74dea33469efb35e825f994c45d2ebad93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/c8c34040e44fa6920976a65d9f693d0c9ba61687/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6d8512ac146023ff032d6bb423285b60bcdfe496/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/c1303d304ddba6fc6476ed6754dd9d5f55333ed8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_366db5b9933987df462d2105dbd0cef483fcfc89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.2.2_ca8be9962c46d7ea407e1e446d7a99416e7cc89f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/4d81d749842215a2eb9270ccc7883e831321b793/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4814575d0e7a8401774702d5ad5af2b80257ce21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/a7c70c3e8a624ba627acddc109244291a85039f5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a15111b86c4479915a6b5bb19be5eab58da9f098/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/1b4c6b6018df304a349e8726967bfa880854e776/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ed333bff7e05bfb6201f2b085f936e12ecb2f46/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.2.2_ed2552d40f1db77a54c2fc09d01792f97a09e266/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/709951635d801356799a5911618faf5567e4d796/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9499f2addc8bcf7b33675aec9a644234416338c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/fbce8adb4d2ad4965c97d71e6ab85829da5ae2e8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ffb5310e5807772d6a549429b399f2766c6351af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/650167a4ba2cf0215a93bfd1752111378df9a878/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d53bd196ca816f0af87be8eaa8b320ae50c0980/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/28874b04f7b5ccd45797fff45467ac82c2d748ac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_679423690d01bf7bf4b1da4bc7336239c90602a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/e7370d22358f896365deb1a5b132b98d08a4890f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bde00e92c4a5a0a1075df7404248ccb30fc7e62b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_93fc08ac35ba4393ab1e95d8ab1c48d8b78caa67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.2.2_74b162f4dd012e0aa6edd6593558764186968b52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/ccb2e72886d6ca88326ccce95eb16721117f070f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_92e591a60cfe4a3423f4fdbf1a2bbba1eca2c83a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/66f3783fe9c838e460fd14a4c86ab703258e05fb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a0aa8d41630cf4cd4b5c1a86a446f1151195d22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_8dc29567d320411a35f22d8bd18d1774b7baf42f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.5.0/c0af904657634f7ab9cc21e75d80250570033321/firebase-client-jvm-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0af904657634f7ab9cc21e75d80250570033321">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-jvm-2.5.0_8939721b55c250798407dc9e91b003d8269b498a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/8590a24e46de4d26d341d63badf7ef16fb18167e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9f1277b95a11e887b0495ab5c9f37e3efdc95e9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/e279ecd77555d1e827d88ed86529e634145be5e4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_da4239e0f2e1d5dc82016329dcf67cb810e9408a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_01b5c3e05505148bf9f9dffb1a931d9b978aea7a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.5.0/7d0473896b3b10b23a2f9812fec4316dff8afdd/firebase-client-android-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="07d0473896b3b10b23a2f9812fec4316dff8afdd">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-android-2.5.0_b51c41b85f12e78b9021f7d896436810676ccdf6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/2f1bf8f2dcaa6e7b4fd401097d07dc1d5650dced/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e35002351f2d415093a9b564652d4b56be6a0593">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3d1cb775a3e804f495ae0f98e1a659fa8c7044ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/2f013907f6fa716602bbf4e4632951ffe1b6dae5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ec44a961b3db8cb2f5910c61b8723f0d02e96c53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/c10f699180cfa404a08c745ba41a0ffbcc248a96/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_16cf0b411a7bc2793e9aa08f2bcf11b76ee4a26e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/3b217abb2ec6c46fcc8815cd42de5309534fdf7e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e6f9fb0d2ea982d656d6dca785a9097659395874">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d39679f87fd7e61809cdf958332e265d3f76419d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/0030498667e746d1eed1655b181bf4e70faff4d9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cb2e221f626742e27a63c0341cded8ad9444a3f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/eff0506c1315572230e4f37d61597d6e3780f980/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_326de2a8a84fa33d8222cc7e0049fab48877ce56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/c9613a18f013e479612b3d746e8036d746547655/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7d876a467dd5aa5f1ce4825f8703fc7abaa9e426/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/c23c7aca1481cef7d4cc9d49b72724f0d501c02c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f003b062f74673f43e31b859c7d02684a2077a81/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/f681dffce73f21586bc4c7ef667f690242a90524/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f171eaef553527dc684d95eea7c6074d5c51c048/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/96e5972d64d0a884c0a8749202ad61865e00fe1b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e1e22e91f1def1059aaae46c6e9153c1261b3bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dor/.android/build-cache/820685f76dee7e48345a6128c76925acd08f37aa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_22865e3cd0164befdfafc95270b755c8cf9853be/classes.dex" />
+    </item>
+
+</items>

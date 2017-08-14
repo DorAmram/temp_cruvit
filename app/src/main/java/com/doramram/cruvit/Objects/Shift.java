@@ -6,6 +6,7 @@ import java.util.Date;
 public class Shift {
 
     int _id;
+    int _jobCode;
     int _startingTime;
     int _endingTime;
     long _date;
@@ -14,8 +15,9 @@ public class Shift {
 
     }
 
-    public Shift(int _id, int _startingTime, int _endingTime, long _date) {
+    public Shift(int _id, int _jobCode, int _startingTime, int _endingTime, long _date) {
         this._id = _id;
+        this._jobCode = _jobCode;
         this._startingTime = _startingTime;
         this._endingTime = _endingTime;
         this._date = _date;
@@ -27,6 +29,14 @@ public class Shift {
 
     public void set_id(int _id) {
         this._id = _id;
+    }
+
+    public int get_jobCode() {
+        return _jobCode;
+    }
+
+    public void set_jobCode(int _jobCode) {
+        this._jobCode = _jobCode;
     }
 
     public int get_startingTime() {

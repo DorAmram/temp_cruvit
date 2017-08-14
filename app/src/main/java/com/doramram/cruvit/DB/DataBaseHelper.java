@@ -55,6 +55,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private static final String KEY_LOCATION_ID = "location_id";
 
     // TABLE_E_SHIFT - column names
+    private static final String KEY_SHIFT_JOB_CODE = "job_code";
     private static final String KEY_SHIFT_STARTING_TIME = "starting_time";
     private static final String KEY_SHIFT_ENDING_TIME = "ending_time";
     private static final String KEY_SHIFT_DATE = "date";
@@ -99,6 +100,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     // TABLE_E_SHIFT table create statement
     private static final String CREATE_TABLE_E_SHIFT = "CREATE TABLE " + TABLE_E_SHIFT + "(" +
             KEY_ID + " INTEGER PRIMARY KEY," +
+            KEY_SHIFT_JOB_CODE + "INTEGER," +
             KEY_SHIFT_STARTING_TIME + "TEXT," +
             KEY_SHIFT_ENDING_TIME + "TEXT," +
             KEY_SHIFT_DATE + "TEXT" + ")";
@@ -239,9 +241,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_PRODUCT_RECIPE, product.get_recipe());
         values.put(KEY_PRODUCT_IMAGE, product.get_image());
 
-        long product_id = db.insert(TABLE_E_PRODUCT, null, values);
+        long item_id = db.insert(TABLE_E_PRODUCT, null, values);
 
-        return product_id;
+        return item_id;
     }
 
     // fetch product element
@@ -329,9 +331,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_TOOLS, job.get_tools());
         values.put(KEY_LOCATION_ID, job.get_location_id());
 
-        long job_id = db.insert(TABLE_E_JOB, null, values);
+        long item_id = db.insert(TABLE_E_JOB, null, values);
 
-        return job_id;
+        return item_id;
     }
 
     // fetch job element
@@ -418,9 +420,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_DESCRIPTION, location.get_description());
         values.put(KEY_LOCATION_INSTRUCTIONS, location.get_instructions());
 
-        long location_id = db.insert(TABLE_E_LOCATION, null, values);
+        long item_id = db.insert(TABLE_E_LOCATION, null, values);
 
-        return location_id;
+        return item_id;
     }
 
     // fetch location element
@@ -500,13 +502,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(KEY_ID, shift.get_id());
+        values.put(KEY_SHIFT_JOB_CODE, shift.get_jobCode());
         values.put(KEY_SHIFT_STARTING_TIME, shift.get_startingTime());
         values.put(KEY_SHIFT_ENDING_TIME, shift.get_endingTime());
         values.put(KEY_SHIFT_DATE, shift.get_date());
 
-        long shift_id = db.insert(TABLE_E_SHIFT, null, values);
+        long item_id = db.insert(TABLE_E_SHIFT, null, values);
 
-        return shift_id;
+        return item_id;
     }
 
     // fetch shift element
@@ -525,6 +528,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         Shift shift = new Shift();
         shift.set_id(cursor.getInt(cursor.getColumnIndex(KEY_ID)));
+        shift.set_jobCode(cursor.getInt(cursor.getColumnIndex(KEY_SHIFT_JOB_CODE)));
         shift.set_startingTime((cursor.getInt(cursor.getColumnIndex(KEY_SHIFT_STARTING_TIME))));
         shift.set_endingTime((cursor.getInt(cursor.getColumnIndex(KEY_SHIFT_ENDING_TIME))));
         shift.set_date((cursor.getLong(cursor.getColumnIndex(KEY_SHIFT_DATE))));
@@ -547,6 +551,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             do {
                 Shift shift = new Shift();
                 shift.set_id(cursor.getInt(cursor.getColumnIndex(KEY_ID)));
+                shift.set_jobCode(cursor.getInt(cursor.getColumnIndex(KEY_SHIFT_JOB_CODE)));
                 shift.set_startingTime((cursor.getInt(cursor.getColumnIndex(KEY_SHIFT_STARTING_TIME))));
                 shift.set_endingTime((cursor.getInt(cursor.getColumnIndex(KEY_SHIFT_ENDING_TIME))));
                 shift.set_date((cursor.getLong(cursor.getColumnIndex(KEY_SHIFT_DATE))));
@@ -589,16 +594,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_DONATION_PRODUCT_CODE, product_id);
         values.put(KEY_DONATION_PRODUCT_AMOUNT, product_amount);
 
-        long donation_id = db.insert(TABLE_E_DONATION, null, values);
+        long item_id = db.insert(TABLE_E_DONATION, null, values);
 
-        return donation_id;
+        return item_id;
     }
 
     // insert donations element
     public long createDonations(Map<Integer, Integer> donationsMap) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        long donation_id = 0;
+        long item_id = 0;
         for(Integer product_id : donationsMap.keySet()){
             int product_amount = donationsMap.get(product_id);
 
@@ -606,10 +611,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             values.put(KEY_DONATION_PRODUCT_CODE, product_id);
             values.put(KEY_DONATION_PRODUCT_AMOUNT, product_amount);
 
-            donation_id = db.insert(TABLE_E_DONATION, null, values);
+            item_id = db.insert(TABLE_E_DONATION, null, values);
         }
 
-        return donation_id;
+        return item_id;
     }
 
     // fetch donation element
@@ -661,9 +666,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_DONATOR_ADDRESS, donator.get_address());
         values.put(KEY_DONATOR_SELF_DELIVERY, donator.is_selfDelivery());
 
-        long donator_id = db.insert(TABLE_E_DONATOR, null, values);
+        long item_id = db.insert(TABLE_E_DONATOR, null, values);
 
-        return donator_id;
+        return item_id;
     }
 
     // fetch donator element
@@ -740,7 +745,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_USER_EMAIL, user.getEmail());
         values.put(KEY_USER_PHONE, user.getPhone());
 
-        long user_id = db.insert(TABLE_E_USER, null, values);
+        long item_id = db.insert(TABLE_E_USER, null, values);
         Log.d(TAG, "inserting new user to e_user");
 
 //        if(getTableSize(TABLE_E_USER) > 1){
@@ -749,7 +754,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 //        }
 
 
-        return user_id;
+        return item_id;
     }
 
     // fetch user element

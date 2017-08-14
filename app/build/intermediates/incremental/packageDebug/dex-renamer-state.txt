@@ -1,0 +1,7 @@
+#Sun Aug 13 19:16:54 IDT 2017
+base.0=/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b06225b6eaa3b73f5057b29b23e229e786a32ac3
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_afc22f88b6c4bcaa7d8a7d26ae1a764fbe2d6d0f/classes.dex
+base.1=/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_afc22f88b6c4bcaa7d8a7d26ae1a764fbe2d6d0f
+file.0=/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b06225b6eaa3b73f5057b29b23e229e786a32ac3/classes.dex

@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 //import com.firebase.client.ValueEventListener;
+import com.doramram.cruvit.Utils.Util;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -46,7 +47,8 @@ public class ChooseProductActivity extends AppCompatActivity {
     private static final String KEY_USER_PHONE = "user_phone";
 
 
-    DataBaseHelper helper = new DataBaseHelper(this);
+    private Util util;
+//    DataBaseHelper helper = new DataBaseHelper(this);
     private RecyclerView recyclerView;
     private ProductAdapter adapter;
     private List<ProductRecyclerItem> listItems;
@@ -62,6 +64,8 @@ public class ChooseProductActivity extends AppCompatActivity {
 
         externalId = ((GlobalExternalId) this.getApplication()).getExternalId();
 
+        util = new Util(this, externalId, TAG);
+
         hiddenPanel = findViewById(R.id.hidden_panel);
         hiddenPanel.setVisibility(View.INVISIBLE);
         isPanelShown = false;
@@ -70,8 +74,8 @@ public class ChooseProductActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        final DataBaseHelper helper = new DataBaseHelper(this);
-        List<Product> productList = helper.getAllProducts();
+//        final DataBaseHelper helper = new DataBaseHelper(this);
+        List<Product> productList = util.getHelper().getAllProducts();
         listItems = convertToRecyclerItems(productList);
         adapter = new ProductAdapter(listItems, this);
         recyclerView.setAdapter(adapter);
@@ -85,11 +89,11 @@ public class ChooseProductActivity extends AppCompatActivity {
 
                     hideHiddenLayout();
 
-                    if(needMoreUserDetails(externalId)){
-                        displayAdditionalDetailsView();
+                    if(util.needMoreUserDetails(externalId)){
+                        util.displayAdditionalDetailsView();
                     } else {
-                        updateDonationsDb();
-                        finishDonation();
+                        util.updateDonationsDb();
+                        util.finishDonation();
                     }
 
                 }
@@ -138,95 +142,95 @@ public class ChooseProductActivity extends AppCompatActivity {
     }
 
 
-    public void updateDonationsDb(){
+//    public void updateDonationsDb(){
+//
+//        DatabaseReference dbref = FirebaseDatabase.getInstance().getReference();
+//
+//        String date = util.generateDate();
+//
+//        for (int key : donationsMap.keySet()){
+//
+//            // update external db
+//            Donation donation = new Donation(key, donationsMap.get(key), externalId, date);
+//            dbref.child("donations").push().setValue(donation);
+//
+//            // update internal db
+//            if(helper.isDataExist(TABLE_E_DONATION, KEY_DONATION_PRODUCT_CODE, String.valueOf(key))){
+//                int amount = helper.getDonationAmount(key) + donationsMap.get(key);
+//                helper.updateDonation(key, amount);
+//            } else {
+//                helper.createDonation(key, donationsMap.get(key));
+//            }
+//        }
+//
+//        donationsMap.clear();
+//
+//        Log.d(TAG, "inserted donation to db");
+//    }
 
-        DatabaseReference dbref = FirebaseDatabase.getInstance().getReference();
 
-        String date = generateDate();
-
-        for (int key : donationsMap.keySet()){
-
-            // update external db
-            Donation donation = new Donation(key, donationsMap.get(key), externalId, date);
-            dbref.child("donations").push().setValue(donation);
-
-            // update internal db
-            if(helper.isDataExist(TABLE_E_DONATION, KEY_DONATION_PRODUCT_CODE, String.valueOf(key))){
-                int amount = helper.getDonationAmount(key) + donationsMap.get(key);
-                helper.updateDonation(key, amount);
-            } else {
-                helper.createDonation(key, donationsMap.get(key));
-            }
-        }
-
-        donationsMap.clear();
-
-        Log.d(TAG, "inserted donation to db");
-    }
-
-
-    public void displayAdditionalDetailsView(){
-
-        RelativeLayout linearLayout = new RelativeLayout(this);
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(50, 50);
-        linearLayout.setLayoutParams(params);
-
-        final EditText phoneEditText = new EditText(this);
-        phoneEditText.setId(View.generateViewId());
-        phoneEditText.setHint("נא להכניס טלפון");
-        RelativeLayout.LayoutParams phoneParams =
-                new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,
-                        RelativeLayout.LayoutParams.WRAP_CONTENT);
-        phoneParams.addRule(RelativeLayout.TEXT_ALIGNMENT_CENTER);
-        phoneParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-
-        linearLayout.addView(phoneEditText, phoneParams);
-
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("עוד כמה פרטים קטנים");
-        alertDialogBuilder.setView(linearLayout);
-
-        alertDialogBuilder
-                .setCancelable(false)
-                .setPositiveButton("שלח",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-
-                                String phone = phoneEditText.getText().toString();
-
-//                                // validate form
-//                                if(TextUtils.isEmpty(phone)){
-//                                    phoneEditText.setError("required");
-//                                } else {
-//                                    phoneEditText.setError(null);
-//                                }
-
-                                // update user internal details
-                                helper.updateTableField(
-                                        TABLE_E_USER,
-                                        KEY_USER_FIREBASE_ID,
-                                        externalId,
-                                        KEY_USER_PHONE,
-                                        phone
-                                );
-
-                                // update user external details
-                                addExternalUserDetails(phone);
-
-                                updateDonationsDb();
-
-                                finishDonation();
-                            }
-                        })
-                .setNegativeButton("ביטול",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-    }
+//    public void displayAdditionalDetailsView(){
+//
+//        RelativeLayout linearLayout = new RelativeLayout(this);
+//        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(50, 50);
+//        linearLayout.setLayoutParams(params);
+//
+//        final EditText phoneEditText = new EditText(this);
+//        phoneEditText.setId(View.generateViewId());
+//        phoneEditText.setHint("נא להכניס טלפון");
+//        RelativeLayout.LayoutParams phoneParams =
+//                new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,
+//                        RelativeLayout.LayoutParams.WRAP_CONTENT);
+//        phoneParams.addRule(RelativeLayout.TEXT_ALIGNMENT_CENTER);
+//        phoneParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
+//
+//        linearLayout.addView(phoneEditText, phoneParams);
+//
+//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+//        alertDialogBuilder.setTitle("עוד כמה פרטים קטנים");
+//        alertDialogBuilder.setView(linearLayout);
+//
+//        alertDialogBuilder
+//                .setCancelable(false)
+//                .setPositiveButton("שלח",
+//                        new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int id) {
+//
+//                                String phone = phoneEditText.getText().toString();
+//
+////                                // validate form
+////                                if(TextUtils.isEmpty(phone)){
+////                                    phoneEditText.setError("required");
+////                                } else {
+////                                    phoneEditText.setError(null);
+////                                }
+//
+//                                // update user internal details
+//                                helper.updateTableField(
+//                                        TABLE_E_USER,
+//                                        KEY_USER_FIREBASE_ID,
+//                                        externalId,
+//                                        KEY_USER_PHONE,
+//                                        phone
+//                                );
+//
+//                                // update user external details
+//                                addExternalUserDetails(phone);
+//
+//                                updateDonationsDb();
+//
+//                                finishDonation();
+//                            }
+//                        })
+//                .setNegativeButton("ביטול",
+//                        new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int id) {
+//                                dialog.cancel();
+//                            }
+//                        });
+//        AlertDialog alertDialog = alertDialogBuilder.create();
+//        alertDialog.show();
+//    }
 
 
     public void finishDonation(){
@@ -243,22 +247,13 @@ public class ChooseProductActivity extends AppCompatActivity {
     }
 
 
-    public boolean needMoreUserDetails(String externalId){
-        User user = helper.getUser();
-        if (user.getPhone() == null){
-            return true;
-        }
-        return false;
-    }
-
-
-    public String generateDate(){
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
-        String formattedDate = df.format(calendar.getTime());
-
-        return formattedDate;
-    }
+//    public boolean needMoreUserDetails(String externalId){
+//        User user = helper.getUser();
+//        if (user.getPhone() == null){
+//            return true;
+//        }
+//        return false;
+//    }
 
 
 //    public void slideUpDown(final View view) {
