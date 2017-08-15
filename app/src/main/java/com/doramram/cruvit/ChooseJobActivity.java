@@ -6,17 +6,22 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.doramram.cruvit.Adapters.JobAdapter;
 import com.doramram.cruvit.Adapters.ProductAdapter;
 import com.doramram.cruvit.Objects.GlobalExternalId;
+import com.doramram.cruvit.Objects.Job;
 import com.doramram.cruvit.Objects.Product;
 import com.doramram.cruvit.Utils.Util;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,8 +32,8 @@ public class ChooseJobActivity extends AppCompatActivity {
 
     private Util util;
     private RecyclerView recyclerView;
-    private ProductAdapter adapter;
-    private List<ProductRecyclerItem> listItems;
+    private JobAdapter adapter;
+    private List<JobRecyclerItem> listItems;
     private View hiddenPanel;
     private boolean isPanelShown = false;
     private String externalId;
@@ -37,7 +42,6 @@ public class ChooseJobActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_job);
-
 
         externalId = ((GlobalExternalId) this.getApplication()).getExternalId();
 
@@ -52,9 +56,9 @@ public class ChooseJobActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 //        final DataBaseHelper helper = new DataBaseHelper(this);
-        List<Product> productList = util.getHelper().getAllProducts();
-        listItems = convertToRecyclerItems(productList);
-        adapter = new ProductAdapter(listItems, this);
+        List<Job> jobList = util.getHelper().getAllJobs();
+        listItems = convertToRecyclerItems(jobList);
+        adapter = new JobAdapter(listItems, this);
         recyclerView.setAdapter(adapter);
 
         // final submit button
@@ -62,7 +66,7 @@ public class ChooseJobActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(!donationsMap.isEmpty()){
+                if(!util.getDonationsMap().isEmpty()){
 
                     hideHiddenLayout();
 
@@ -72,11 +76,32 @@ public class ChooseJobActivity extends AppCompatActivity {
                         util.updateDonationsDb();
                         util.finishDonation();
                     }
-
                 }
             }
         });
+    }
 
+    public List<JobRecyclerItem> convertToRecyclerItems(List<Job> jobList){
 
+        List<JobRecyclerItem> jobRecyclerItemList = new ArrayList<JobRecyclerItem>();
+
+        for (Job job:jobList) {
+            int id = job.get_id();
+            String title = job.get_name();
+            String description = job.get_description();
+            int image_uri = job.get_image();
+
+            JobRecyclerItem item = new JobRecyclerItem(id, title, description, image_uri);
+            jobRecyclerItemList.add(item);
+        }
+
+        return jobRecyclerItemList;
+    }
+
+    public void hideHiddenLayout(){
+        Animation bottomDown = AnimationUtils.loadAnimation(this, R.anim.slide_out_bottom);
+        hiddenPanel.startAnimation(bottomDown);
+        hiddenPanel.setVisibility(View.INVISIBLE);
+        isPanelShown = false;
     }
 }

@@ -6,25 +6,21 @@ public class Job {
     private int _id;
     private String _name;
     private String _description;
-    private String _tools;
-    private int _location_id;
+    private String _hours;
+    private long _date;
+    private int _image;
 
     public Job(){
 
     }
 
-    public Job(int _id, String _name, String _description) {
+    public Job(int _id, String _name, String _description, String hours, long date, int image) {
         this._id = _id;
         this._name = _name;
         this._description = _description;
-    }
-
-    public Job(int _id, String _name, String _description, String _tools, int _location_id) {
-        this._id = _id;
-        this._name = _name;
-        this._description = _description;
-        this._tools = _tools;
-        this._location_id = _location_id;
+        this._hours = hours;
+        this._date = date;
+        this._image = image;
     }
 
     public int get_id() {
@@ -51,19 +47,27 @@ public class Job {
         this._description = _description;
     }
 
-    public String get_tools() {
-        return _tools;
+    public String get_hours() {
+        return _hours;
     }
 
-    public void set_tools(String _tools) {
-        this._tools = _tools;
+    public void set_hours(String _hours) {
+        this._hours = _hours;
     }
 
-    public int get_location_id() {
-        return _location_id;
+    public long get_date() {
+        return _date;
     }
 
-    public void set_location_id(int _location_id) {
-        this._location_id = _location_id;
+    public void set_date(long _date) {
+        this._date = _date;
+    }
+
+    public int get_image() {
+        return _image;
+    }
+
+    public void set_image(int _image) {
+        this._image = _image;
     }
 }

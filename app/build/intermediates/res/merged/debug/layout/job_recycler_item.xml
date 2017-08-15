@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/job_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/job_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cruvit_logo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_txt_title"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_below="@+id/job_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_txt_Description"
+                android:text="Description"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/job_txt_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_hours"
+                android:text="Hours"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/job_txt_title" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_txt_id"
+                android:text="Id"
+                android:visibility="invisible"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

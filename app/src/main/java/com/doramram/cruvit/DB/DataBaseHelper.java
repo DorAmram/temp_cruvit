@@ -51,8 +51,11 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private static final String KEY_PRODUCT_IMAGE = "image";
 
     // TABLE_E_JOB - column names
-    private static final String KEY_TOOLS = "tools";
-    private static final String KEY_LOCATION_ID = "location_id";
+//    private static final String KEY_TOOLS = "tools";
+//    private static final String KEY_LOCATION_ID = "location_id";
+    private static final String KEY_JOB_HOURS = "hours";
+    private static final String KEY_JOB_DATE = "date";
+    private static final String KEY_JOB_IMAGE = "image";
 
     // TABLE_E_SHIFT - column names
     private static final String KEY_SHIFT_JOB_CODE = "job_code";
@@ -94,8 +97,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             KEY_ID + " INTEGER PRIMARY KEY," +
             KEY_NAME + " TEXT," +
             KEY_DESCRIPTION + " TEXT," +
-            KEY_TOOLS + " TEXT," +
-            KEY_LOCATION_ID + "INTEGER" + ")";
+            KEY_JOB_HOURS + " TEXT," +
+            KEY_JOB_DATE + " TEXT," +
+            KEY_JOB_IMAGE + " INTEGER" + ")";
 
     // TABLE_E_SHIFT table create statement
     private static final String CREATE_TABLE_E_SHIFT = "CREATE TABLE " + TABLE_E_SHIFT + "(" +
@@ -139,7 +143,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             "WHERE " + KEY_USER_FIREBASE_ID + " NOT IN "+
             "(SELECT " + KEY_USER_FIREBASE_ID + " from " + TABLE_E_USER  +
             " ORDER BY insertion_date DESC LIMIT 1)";
-
 
     public DataBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -328,8 +331,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(KEY_ID, job.get_id());
         values.put(KEY_NAME, job.get_name());
         values.put(KEY_DESCRIPTION, job.get_description());
-        values.put(KEY_TOOLS, job.get_tools());
-        values.put(KEY_LOCATION_ID, job.get_location_id());
+        values.put(KEY_JOB_HOURS, job.get_hours());
+        values.put(KEY_JOB_DATE, job.get_date());
+        values.put(KEY_JOB_IMAGE, job.get_image());
 
         long item_id = db.insert(TABLE_E_JOB, null, values);
 
@@ -352,10 +356,11 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         Job job = new Job();
         job.set_id(cursor.getInt(cursor.getColumnIndex(KEY_ID)));
-        job.set_name((cursor.getString(cursor.getColumnIndex(KEY_NAME))));
-        job.set_description((cursor.getString(cursor.getColumnIndex(KEY_DESCRIPTION))));
-        job.set_tools((cursor.getString(cursor.getColumnIndex(KEY_TOOLS))));
-        job.set_location_id((cursor.getInt(cursor.getColumnIndex(KEY_LOCATION_ID))));
+        job.set_name(cursor.getString(cursor.getColumnIndex(KEY_NAME)));
+        job.set_description(cursor.getString(cursor.getColumnIndex(KEY_DESCRIPTION)));
+        job.set_hours(cursor.getString(cursor.getColumnIndex(KEY_JOB_HOURS)));
+        job.set_date(cursor.getLong(cursor.getColumnIndex(KEY_JOB_DATE)));
+        job.set_image(cursor.getInt(cursor.getColumnIndex(KEY_JOB_IMAGE)));
 
         return job;
     }
@@ -377,8 +382,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 job.set_id(cursor.getInt(cursor.getColumnIndex(KEY_ID)));
                 job.set_name((cursor.getString(cursor.getColumnIndex(KEY_NAME))));
                 job.set_description((cursor.getString(cursor.getColumnIndex(KEY_DESCRIPTION))));
-                job.set_tools((cursor.getString(cursor.getColumnIndex(KEY_TOOLS))));
-                job.set_location_id((cursor.getInt(cursor.getColumnIndex(KEY_LOCATION_ID))));
+                job.set_hours(cursor.getString(cursor.getColumnIndex(KEY_JOB_HOURS)));
+                job.set_date(cursor.getLong(cursor.getColumnIndex(KEY_JOB_DATE)));
+                job.set_image(cursor.getInt(cursor.getColumnIndex(KEY_JOB_IMAGE)));
 
                 // adding to todo list
                 jobs.add(job);

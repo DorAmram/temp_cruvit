@@ -244,6 +244,10 @@
         "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout/job_recycler_item.xml",
+        "source": "/home/dor/Desktop/Cruvit/app/src/main/res/layout/job_recycler_item.xml"
+    },
+    {
         "merged": "/home/dor/Desktop/Cruvit/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/home/dor/.android/build-cache/d9f300582626db62f5b7409929f8184c451c8d05/output/res/layout/abc_activity_chooser_view.xml"
     },
