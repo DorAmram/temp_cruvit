@@ -1,4 +1,4 @@
-#Mon Aug 14 20:15:41 IDT 2017
+#Sun Aug 27 19:51:14 IDT 2017
 base.0=/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
 renamed.0=classes.dex
 file.0=/home/dor/Desktop/Cruvit/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex

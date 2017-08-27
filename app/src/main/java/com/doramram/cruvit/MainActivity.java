@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.doramram.cruvit.DB.DataBaseHelper;
+import com.doramram.cruvit.Objects.Job;
 import com.doramram.cruvit.Objects.NotificationID;
 import com.doramram.cruvit.Objects.Product;
 
@@ -187,6 +188,12 @@ public class MainActivity extends AppCompatActivity {
         helper.createProduct(p3);
         helper.createProduct(p4);
         helper.createProduct(p5);
+
+        Job j1 = new Job(1, "job_name1", "job_description1", "job_hours1", System.currentTimeMillis(), R.drawable.boxes);
+        Job j2 = new Job(2, "job_name2", "job_description2", "job_hours2", System.currentTimeMillis(), R.drawable.boxes);
+
+        helper.createJob(j1);
+        helper.createJob(j2);
 
     }
 

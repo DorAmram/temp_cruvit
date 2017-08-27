@@ -13,10 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.doramram.cruvit.Adapters.JobAdapter;
-import com.doramram.cruvit.Adapters.ProductAdapter;
+//import com.doramram.cruvit.Adapters.ProductAdapter;
 import com.doramram.cruvit.Objects.GlobalExternalId;
 import com.doramram.cruvit.Objects.Job;
-import com.doramram.cruvit.Objects.Product;
+//import com.doramram.cruvit.Objects.Product;
 import com.doramram.cruvit.Utils.Util;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -36,6 +36,7 @@ public class ChooseJobActivity extends AppCompatActivity {
     private List<JobRecyclerItem> listItems;
     private View hiddenPanel;
     private boolean isPanelShown = false;
+    public Map<Integer, Integer> donationsMap = new HashMap<Integer, Integer>();
     private String externalId;
 
     @Override
@@ -45,12 +46,13 @@ public class ChooseJobActivity extends AppCompatActivity {
 
         externalId = ((GlobalExternalId) this.getApplication()).getExternalId();
 
-        util = new Util(this, externalId, TAG);
+        util = new Util(this, externalId, donationsMap, TAG);
 
         hiddenPanel = findViewById(R.id.hidden_panel);
         hiddenPanel.setVisibility(View.INVISIBLE);
         isPanelShown = false;
 
+//        TODO: change view here
         recyclerView = (RecyclerView) findViewById(R.id.product_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

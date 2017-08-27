@@ -64,7 +64,7 @@ public class ChooseProductActivity extends AppCompatActivity {
 
         externalId = ((GlobalExternalId) this.getApplication()).getExternalId();
 
-        util = new Util(this, externalId, TAG);
+        util = new Util(this, externalId, donationsMap, TAG);
 
         hiddenPanel = findViewById(R.id.hidden_panel);
         hiddenPanel.setVisibility(View.INVISIBLE);
@@ -85,18 +85,18 @@ public class ChooseProductActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(!donationsMap.isEmpty()){
+            if(util.gotDonations()){
 
-                    hideHiddenLayout();
+                hideHiddenLayout();
 
-                    if(util.needMoreUserDetails(externalId)){
-                        util.displayAdditionalDetailsView();
-                    } else {
-                        util.updateDonationsDb();
-                        util.finishDonation();
-                    }
-
+                if(util.needMoreUserDetails(externalId)){
+                    util.displayAdditionalDetailsView();
+                } else {
+                    util.updateDonationsDb();
+                    util.finishDonation();
                 }
+
+            }
             }
         });
     }
@@ -121,7 +121,8 @@ public class ChooseProductActivity extends AppCompatActivity {
 
 
     public void updateDonationsMap(int productId, int productAmount){
-        donationsMap.put(productId, productAmount);
+//        donationsMap.put(productId, productAmount);
+        util.updateDonationsMap(productId, productAmount);
         displayHiddenLayout();
     }
 

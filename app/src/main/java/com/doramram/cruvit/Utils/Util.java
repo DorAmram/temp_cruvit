@@ -34,13 +34,14 @@ public class Util {
     String _externalId;
     String _tag;
     DataBaseHelper helper;
-    Map<Integer, Integer> donationsMap = new HashMap<Integer, Integer>();
+    Map<Integer, Integer> _donationsMap;
 
-    public Util(Context context, String externalId, String tag){
+    public Util(Context context, String externalId, Map<Integer, Integer> donationsMap, String tag){
         this._context = context;
         this._externalId = externalId;
         this._tag = tag;
         this.helper = new DataBaseHelper(context);
+        this._donationsMap = donationsMap;
     }
 
 
@@ -109,28 +110,32 @@ public class Util {
         alertDialog.show();
     }
 
+    public void updateDonationsMap(int productId, int productAmount){
+        _donationsMap.put(productId, productAmount);
+    }
+
     public void updateDonationsDb(){
 
         DatabaseReference dbref = FirebaseDatabase.getInstance().getReference();
 
         String date = generateDate();
 
-        for (int key : donationsMap.keySet()){
+        for (int key : this._donationsMap.keySet()){
 
             // update external db
-            Donation donation = new Donation(key, donationsMap.get(key), this._externalId, date);
+            Donation donation = new Donation(key, this._donationsMap.get(key), this._externalId, date);
             dbref.child("donations").push().setValue(donation);
 
             // update internal db
             if(helper.isDataExist(TABLE_E_DONATION, KEY_DONATION_PRODUCT_CODE, String.valueOf(key))){
-                int amount = helper.getDonationAmount(key) + donationsMap.get(key);
+                int amount = helper.getDonationAmount(key) + this._donationsMap.get(key);
                 helper.updateDonation(key, amount);
             } else {
-                helper.createDonation(key, donationsMap.get(key));
+                helper.createDonation(key, this._donationsMap.get(key));
             }
         }
 
-        donationsMap.clear();
+        this._donationsMap.clear();
 
         Log.d(this._tag, "inserted donation to db");
     }
@@ -162,6 +167,10 @@ public class Util {
             return true;
         }
         return false;
+    }
+
+    public boolean gotDonations(){
+        return !_donationsMap.isEmpty();
     }
 
     public Context get_context() {
@@ -197,10 +206,11 @@ public class Util {
     }
 
     public Map<Integer, Integer> getDonationsMap() {
-        return donationsMap;
+        return this._donationsMap;
     }
 
     public void setDonationsMap(Map<Integer, Integer> donationsMap) {
-        this.donationsMap = donationsMap;
+        this._donationsMap = donationsMap;
     }
+
 }
