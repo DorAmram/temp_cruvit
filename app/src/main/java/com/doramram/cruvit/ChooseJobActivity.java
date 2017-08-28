@@ -48,12 +48,12 @@ public class ChooseJobActivity extends AppCompatActivity {
 
         util = new Util(this, externalId, donationsMap, TAG);
 
-        hiddenPanel = findViewById(R.id.hidden_panel);
+        hiddenPanel = findViewById(R.id.job_hidden_panel);
         hiddenPanel.setVisibility(View.INVISIBLE);
         isPanelShown = false;
 
 //        TODO: change view here
-        recyclerView = (RecyclerView) findViewById(R.id.product_recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.job_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -64,7 +64,7 @@ public class ChooseJobActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         // final submit button
-        Button submitButton = (Button) findViewById(R.id.submit_button);
+        Button submitButton = (Button) findViewById(R.id.job_submit_button);
         submitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -89,15 +89,23 @@ public class ChooseJobActivity extends AppCompatActivity {
 
         for (Job job:jobList) {
             int id = job.get_id();
-            String title = job.get_name();
+            String name = job.get_name();
             String description = job.get_description();
+            String hours = job.get_hours();
+            long jobDate = job.get_date();
             int image_uri = job.get_image();
 
-            JobRecyclerItem item = new JobRecyclerItem(id, title, description, image_uri);
+            JobRecyclerItem item = new JobRecyclerItem(id, name, description, hours, jobDate, image_uri);
             jobRecyclerItemList.add(item);
         }
 
         return jobRecyclerItemList;
+    }
+
+    public void updateDonationsMap(int productId, int productAmount){
+//        donationsMap.put(productId, productAmount);
+        util.updateDonationsMap(productId, productAmount);
+        displayHiddenLayout();
     }
 
     public void hideHiddenLayout(){
@@ -106,4 +114,12 @@ public class ChooseJobActivity extends AppCompatActivity {
         hiddenPanel.setVisibility(View.INVISIBLE);
         isPanelShown = false;
     }
+
+    public void displayHiddenLayout(){
+        Animation bottomUp = AnimationUtils.loadAnimation(this, R.anim.slide_in_bottom);
+        hiddenPanel.startAnimation(bottomUp);
+        hiddenPanel.setVisibility(View.VISIBLE);
+        isPanelShown = true;
+    }
+
 }

@@ -38,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/job_txt_Description"
                 android:text="Description"
+                android:layout_alignParentRight="true"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:layout_below="@+id/job_txt_title" />
 
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/job_hours"
                 android:text="Hours"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentRight="false"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:layout_below="@+id/job_txt_title" />
 

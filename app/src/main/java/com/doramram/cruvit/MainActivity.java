@@ -191,9 +191,11 @@ public class MainActivity extends AppCompatActivity {
 
         Job j1 = new Job(1, "job_name1", "job_description1", "job_hours1", System.currentTimeMillis(), R.drawable.boxes);
         Job j2 = new Job(2, "job_name2", "job_description2", "job_hours2", System.currentTimeMillis(), R.drawable.boxes);
+        Job j3 = new Job(3, "job_name3", "job_description3", "job_hours3", System.currentTimeMillis(), R.drawable.boxes);
 
         helper.createJob(j1);
         helper.createJob(j2);
+        helper.createJob(j3);
 
     }
 

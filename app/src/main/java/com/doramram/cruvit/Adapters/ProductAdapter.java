@@ -64,41 +64,41 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             @Override
             public void onClick(View v) {
 
-                RelativeLayout linearLayout = new RelativeLayout(mContext);
-                final NumberPicker aNumberPicker = new NumberPicker(mContext);
-                aNumberPicker.setMaxValue(20);
-                aNumberPicker.setMinValue(1);
+            RelativeLayout linearLayout = new RelativeLayout(mContext);
+            final NumberPicker aNumberPicker = new NumberPicker(mContext);
+            aNumberPicker.setMaxValue(20);
+            aNumberPicker.setMinValue(1);
 
-                RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(50, 50);
-                RelativeLayout.LayoutParams numPicerParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-                numPicerParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(50, 50);
+            RelativeLayout.LayoutParams numPicerParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+            numPicerParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
 
-                linearLayout.setLayoutParams(params);
-                linearLayout.addView(aNumberPicker,numPicerParams);
+            linearLayout.setLayoutParams(params);
+            linearLayout.addView(aNumberPicker,numPicerParams);
 
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
-                alertDialogBuilder.setTitle("כמה תרצו לתרום?");
-                alertDialogBuilder.setView(linearLayout);
-                alertDialogBuilder
-                        .setCancelable(false)
-                        .setPositiveButton("לתרום",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        int productId = Integer.parseInt(viewHolder.txtId.getText().toString());
-                                        int productAmount = aNumberPicker.getValue();
-                                        if(mContext instanceof ChooseProductActivity){
-                                            ((ChooseProductActivity)mContext).updateDonationsMap(productId, productAmount);
-                                        }
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
+            alertDialogBuilder.setTitle("כמה תרצו לתרום?");
+            alertDialogBuilder.setView(linearLayout);
+            alertDialogBuilder
+                    .setCancelable(false)
+                    .setPositiveButton("לתרום",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    int productId = Integer.parseInt(viewHolder.txtId.getText().toString());
+                                    int productAmount = aNumberPicker.getValue();
+                                    if(mContext instanceof ChooseProductActivity){
+                                        ((ChooseProductActivity)mContext).updateDonationsMap(productId, productAmount);
                                     }
-                                })
-                        .setNegativeButton("ביטול",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.cancel();
-                                    }
-                                });
-                AlertDialog alertDialog = alertDialogBuilder.create();
-                alertDialog.show();
+                                }
+                            })
+                    .setNegativeButton("ביטול",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
             }
         });
 

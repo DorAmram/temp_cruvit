@@ -1,6 +1,6 @@
 package com.doramram.cruvit;
 
-
+//TODO: remove this line
 //https://stackoverflow.com/questions/26890190/images-in-recyclerview
 
 public class ProductRecyclerItem extends BaseRecyclerItem{

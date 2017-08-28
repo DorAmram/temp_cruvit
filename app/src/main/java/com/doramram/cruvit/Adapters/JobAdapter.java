@@ -37,10 +37,10 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder>{
 
         public ViewHolder(View itemView) {
             super(itemView);
-            txtTitle = (TextView) itemView.findViewById(R.id.txtTitle);
-            txtDescription = (TextView) itemView.findViewById(R.id.txtDescription);
-            txtId = (TextView) itemView.findViewById(R.id.txtId);
-            imageView = (ImageView) itemView.findViewById(R.id.product_image);
+            txtTitle = (TextView) itemView.findViewById(R.id.job_txt_title);
+            txtDescription = (TextView) itemView.findViewById(R.id.job_txt_Description);
+            txtId = (TextView) itemView.findViewById(R.id.job_txt_id);
+            imageView = (ImageView) itemView.findViewById(R.id.job_image);
         }
     }
 
@@ -61,43 +61,41 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder>{
             @Override
             public void onClick(View v) {
 
-                // TODO: change handling here, switch from donation of products to donation of hours
+            RelativeLayout linearLayout = new RelativeLayout(mContext);
+//            final NumberPicker aNumberPicker = new NumberPicker(mContext);
+//            aNumberPicker.setMaxValue(20);
+//            aNumberPicker.setMinValue(1);
 
-//                RelativeLayout linearLayout = new RelativeLayout(mContext);
-//                final NumberPicker aNumberPicker = new NumberPicker(mContext);
-//                aNumberPicker.setMaxValue(20);
-//                aNumberPicker.setMinValue(1);
-//
-//                RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(50, 50);
-//                RelativeLayout.LayoutParams numPicerParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-//                numPicerParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//
-//                linearLayout.setLayoutParams(params);
-//                linearLayout.addView(aNumberPicker,numPicerParams);
-//
-//                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
-//                alertDialogBuilder.setTitle("כמה תרצו לתרום?");
-//                alertDialogBuilder.setView(linearLayout);
-//                alertDialogBuilder
-//                        .setCancelable(false)
-//                        .setPositiveButton("לתרום",
-//                                new DialogInterface.OnClickListener() {
-//                                    public void onClick(DialogInterface dialog, int id) {
-//                                        int jobId = Integer.parseInt(viewHolder.txtId.getText().toString());
-//                                        int jobAmount = aNumberPicker.getValue();
-//                                        if(mContext instanceof ChooseJobActivity){
-//                                            ((ChooseJobActivity)mContext).updateDonationsMap(jobId, jobAmount);
-//                                        }
-//                                    }
-//                                })
-//                        .setNegativeButton("ביטול",
-//                                new DialogInterface.OnClickListener() {
-//                                    public void onClick(DialogInterface dialog, int id) {
-//                                        dialog.cancel();
-//                                    }
-//                                });
-//                AlertDialog alertDialog = alertDialogBuilder.create();
-//                alertDialog.show();
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(50, 50);
+//            RelativeLayout.LayoutParams numPicerParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+//            numPicerParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
+
+            linearLayout.setLayoutParams(params);
+//            linearLayout.addView(aNumberPicker,numPicerParams);
+
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
+            alertDialogBuilder.setTitle("לתרום?");
+            alertDialogBuilder.setView(linearLayout);
+            alertDialogBuilder
+                    .setCancelable(false)
+                    .setPositiveButton("לתרום",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    int jobId = Integer.parseInt(viewHolder.txtId.getText().toString());
+                                    int jobAmount = 1;
+                                    if(mContext instanceof ChooseJobActivity){
+                                        ((ChooseJobActivity)mContext).updateDonationsMap(jobId, jobAmount);
+                                    }
+                                }
+                            })
+                    .setNegativeButton("ביטול",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
             }
         });
 
